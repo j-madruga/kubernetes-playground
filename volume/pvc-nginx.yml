@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metada:
+  name: my-persistent-volume-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 50Mi
+  storageClassName: local-storage
+  selector:
+    matchLabels:
+      kubernetes.io/hostname: kind-kind-worker2
+    matchExpressions:
+      - {key: node-label, operator: In, values: [worker-2]}
