@@ -1,4 +1,4 @@
-El siguiente instructuvo esta realizado utilizando Virtual Box para crear la maquina guest desde Windows 10 como host, utilizando como imagen un Ubuntu 22.04.1 accediendo via SSH desde Powershell 
+El siguiente instructuvo esta realizado utilizando Virtual Box para crear la maquina guest desde Windows 10 como host, utilizando como imagen un Ubuntu 22.04.1 (https://releases.ubuntu.com/jammy/) accediendo via SSH desde Powershell 
 
 ### CONFIGURACIÓN PARA ACCEDER POR SSH
 - `sudo apt install net-tools` -> nos permite acceder a comandos como **ifconfig**
