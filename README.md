@@ -1,5 +1,18 @@
 # kubernetes-playground
 
+## *CONTEXT - KUBERNETES*
+
+- kubectl config view
+- kubectl config current-context -> devuelve el nombre del context
+- kubectl config set-context [context-name] --namespace=[namespace-name] \
+  --cluster=kind-playground \
+  --user=kind-playground -> define (crea) un contexto para el namespace
+- kubectl config use-context [context-name] -> setea el context al elegido
+
+## *NAMESPACE - KUBERNETES*
+
+- kubectl get namespaces --show-labels -> muestra los namespaces con sus labels
+
 ## *DEPLOYMENT - KUBERNETES*
 
 - kubectl `get deploy -n [namespace]` -> los deploy que hay en el namespace
@@ -16,7 +29,7 @@
 
 - kubectl `get nodes`
 - kubectl `describe node`
-- kubectl `label nodes [node-name>]  [label-key]=[label-value] ` -> agrega labels a nodos
+- kubectl `label nodes [node-name]  [label-key]=[label-value] ` -> agrega labels a nodos
 - kubectl `get nodes --show-labels ` -> muestra los nodos con sus labels
 
 ## *LOGS - KUBERNETES*
